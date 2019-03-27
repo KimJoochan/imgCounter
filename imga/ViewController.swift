@@ -23,7 +23,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func update(_ sender: UIButton) {
-       /* if(check==false){
+        if count==5{
+            check = !check;
+        }else if count==1{
+            check = !check;
+        }
+        if check == true{
+            count+=1
+        }else if check == false{
+            count-=1
+        }
+        img.image=UIImage(named: "frame\(count).png");
+        /*
+        if(check==false){
             count+=1;
             img.image=UIImage(named: "frame\(count).png");
             if(count==5){
@@ -36,14 +48,14 @@ class ViewController: UIViewController {
                 check = !check;
             }
         }*/
-        count+=1;
+       // count+=1;
         cou.text=String(count);
-        if(count<6){
+        /*if(count<6){
             img.image=UIImage(named: "frame\(count).png");
             if(count==5){
                 count=0;
             }
-        }
+        }*/
     }
     
 }
